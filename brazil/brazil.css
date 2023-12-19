@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+.green-rectangle,
+.yellow-diamond,
+.blue-circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-rectangle {
+    background-color: #009c38;
+    height: 100vh;
+    width: 100%;
+}
+
+.yellow-diamond {
+    background-color: #fee003;
+    height: 500px;
+    width: 500px;
+    rotate: 45deg;
+}
+
+.blue-circle {
+    background-color: #002277;
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+}
+
+.white-band {
+    height: 30%;
+    width: 100%;
+    border-bottom: #fff solid 50px;
+    border-radius: 40%;
+    rotate: 150deg;
+}
