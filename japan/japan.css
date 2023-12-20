@@ -26,6 +26,8 @@
 
 .white-background {
     background-color: var(--color-white-background);
+    height: 100%;
+    width: 100%;
 }
 
 .red-circle {
