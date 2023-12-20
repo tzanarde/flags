@@ -1,0 +1,77 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1173px;
+    --prop-blue-triangle-axis-x: 0.5;
+    --prop-blue-triangle-axis-y: 1;
+    --prop-red-and-white-trapezes-axis-y: 0.5;
+    --prop-red-and-white-trapezes-axis-x: 0.5;
+    --color-background: #000;
+    --color-flag-area: #11ff00;
+    --color-blue-triangle: #09437f;
+    --color-white-trapeze: #fff;
+    --color-red-trapeze: #d80c14;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blue-triangle,
+.white-trapeze,
+.red-trapeze {
+    background-color: inherit;
+    position: absolute;
+}
+
+.blue-triangle {
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 50%;
+    border: calc((var(--size-axis-y) * var(--prop-blue-triangle-axis-y)) / 2)
+            solid
+            transparent;
+    border-left: calc((var(--size-axis-x) * var(--prop-blue-triangle-axis-x)) + 1px)
+                 solid
+                 var(--color-blue-triangle);
+    transform: translateY(-50%);
+}
+
+.white-trapeze {
+    background-color: transparent;
+    height: 0;
+    width: calc(var(--size-axis-x) * var(--prop-red-and-white-trapezes-axis-x));
+    right: 0;
+    top: 0;
+    border-top: calc((var(--size-axis-y) * var(--prop-red-and-white-trapezes-axis-y)) + 0.5px)
+                solid
+                var(--color-white-trapeze);
+    border-left: calc((var(--size-axis-x) / 2) + 1px)
+                 solid
+                 transparent;
+}
+
+.red-trapeze {
+    background-color: transparent;
+    height: 0;
+    width: calc(var(--size-axis-x) * var(--prop-red-and-white-trapezes-axis-x));
+    right: 0;
+    bottom: 0;
+    border-bottom: calc((var(--size-axis-y) * var(--prop-red-and-white-trapezes-axis-y)) + 0.5px)
+                   solid
+                   var(--color-red-trapeze);
+    border-left: calc((var(--size-axis-x) / 2) + 1px)
+                 solid
+                 transparent;
+}
