@@ -1,0 +1,23 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1171.436px;
+    --prop-some-element-axis-y: x;
+    --prop-some-element-axis-x: x;
+    --color-background: #000;
+    --color-flag-area: #fff;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
