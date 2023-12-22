@@ -1,0 +1,95 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1303.594px;
+    --prop-white-space-border-axis-y: 0.120952380952381;
+    --prop-white-space-border-axis-x: 0.117714285714286;
+    --prop-height-horizontal-triangles: 0.380952380952381;
+    --prop-width-horizontal-triangles: 0.765714285714286;
+    --prop-height-vertical-triangles: 0.761904761904762;
+    --prop-width-vertical-triangles: 0.382857142857143;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-background: #fff;
+    --color-blue-triangles-background: #035db9;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-background {
+    background-color: var(--color-white-background);
+    height: 100%;
+    width: 100%;
+}
+
+.top-triangle,
+.bottom-triangle,
+.left-triangle,
+.right-triangle {
+    background-color: transparent;
+    position: absolute;
+}
+
+.top-triangle,
+.bottom-triangle {
+    border-left: calc((var(--prop-width-horizontal-triangles) * var(--size-axis-x)) / 2)
+                 solid
+                 transparent;
+    border-right: calc((var(--prop-width-horizontal-triangles) * var(--size-axis-x)) / 2)
+                  solid
+                  transparent;
+    margin-left: calc(var(--prop-white-space-border-axis-x) * var(--size-axis-x));
+    margin-right: calc(var(--prop-white-space-border-axis-x) * var(--size-axis-x));
+}
+
+.top-triangle {
+    top: 0;
+    border-top: calc(var(--prop-height-horizontal-triangles) * var(--size-axis-y))
+                solid
+                var(--color-blue-triangles-background);
+}
+
+.bottom-triangle {
+    bottom: 0;
+    border-bottom: calc(var(--prop-height-horizontal-triangles) * var(--size-axis-y))
+                   solid
+                   var(--color-blue-triangles-background);
+}
+
+.left-triangle,
+.right-triangle {
+    border-top: calc((var(--prop-height-vertical-triangles) * var(--size-axis-y)) / 2)
+                solid
+                transparent;
+    border-bottom: calc((var(--prop-height-vertical-triangles) * var(--size-axis-y)) / 2)
+                   solid
+                   transparent;
+    margin-top: calc(var(--prop-white-space-border-axis-y) * var(--size-axis-y));
+    margin-bottom: calc(var(--prop-white-space-border-axis-y) * var(--size-axis-y));
+}
+
+.left-triangle {
+    left: 0;
+    border-left: calc(var(--prop-width-vertical-triangles) * var(--size-axis-x))
+                 solid
+                 var(--color-blue-triangles-background);
+}
+
+.right-triangle {
+    right: 0;
+    border-right: calc(var(--prop-width-vertical-triangles) * var(--size-axis-x))
+                  solid
+                  var(--color-blue-triangles-background);
+}
