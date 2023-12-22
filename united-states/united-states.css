@@ -1,0 +1,115 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1485.8px;
+    --prop-blue-rectangle-axis-y: 0.538461538461538;
+    --prop-blue-rectangle-axis-x: 0.399497487437186;
+    --prop-red-and-white-rectangles-axis-y: 0.076923076923077;
+    --prop-diff-star: 0.034;
+    --prop-margin-six-stripe-stars-axis-x: 0.019095477386935;
+    --prop-margin-five-stripe-stars-axis-x: 0.050251256281407;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-blue-rectangle: #39396f;
+    --color-white-stars: #fff;
+    --color-red-rectangle: #b41c31;
+    --color-white-rectangle: #fff;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blue-rectangle {
+    background-color: var(--color-blue-rectangle);
+    position: absolute;
+    height: calc(var(--prop-blue-rectangle-axis-y) * var(--size-axis-y));
+    width: calc(var(--prop-blue-rectangle-axis-x) * var(--size-axis-x));
+}
+
+.stars-container {
+    background-color: transparent;
+    margin-top: 35px;
+}
+
+.red-rectangle,
+.white-rectangle {
+    height: calc(var(--prop-red-and-white-rectangles-axis-y) * var(--size-axis-y));
+}
+
+.red-rectangle {
+    background-color: var(--color-red-rectangle);
+}
+
+.white-rectangle {
+    background-color: var(--color-white-rectangle);
+}
+
+.six-stripe-stars {
+    margin: 0 calc(var(--prop-margin-six-stripe-stars-axis-x) * var(--size-axis-x))
+}
+
+.five-stripe-stars {
+    margin: 0 calc(var(--prop-margin-five-stripe-stars-axis-x) * var(--size-axis-x))
+}
+
+.six-stripe-stars,
+.five-stripe-stars {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: calc(var(--prop-diff-star) * var(--size-axis-y));
+}
+
+.white-star {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    color: var(--color-white-stars);
+    width: 0px;
+    height: 0px;
+    border-right: 22.367839195979892px solid transparent;
+    border-bottom: 15.694070351758789px solid var(--color-white-stars);
+    border-left: 22.367839195979892px solid transparent;
+    transform: rotate(35deg);
+  }
+  .white-star:before {
+    background-color: transparent;
+    border-bottom: 17.936080402010045px solid var(--color-white-stars);
+    border-left: 6.726030150753767px solid transparent;
+    border-right: 6.726030150753767px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -12px;
+    left: -17px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .white-star:after {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    color: var(--color-white-stars);
+    top: 2px;
+    left: -26px;
+    width: 0px;
+    height: 0px;
+    border-right: 22.367839195979892px solid transparent;
+    border-bottom: 15.694070351758789px solid var(--color-white-stars);
+    border-left: 22.367839195979892px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
