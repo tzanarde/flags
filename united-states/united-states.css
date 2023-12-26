@@ -84,7 +84,8 @@
     border-left: 22.367839195979892px solid transparent;
     transform: rotate(35deg);
   }
-  .white-star:before {
+
+.white-star:before {
     background-color: transparent;
     border-bottom: 17.936080402010045px solid var(--color-white-stars);
     border-left: 6.726030150753767px solid transparent;
@@ -97,8 +98,9 @@
     display: block;
     content: '';
     transform: rotate(-35deg);
-  }
-  .white-star:after {
+}
+
+.white-star:after {
     background-color: transparent;
     position: absolute;
     display: block;
@@ -112,4 +114,4 @@
     border-left: 22.367839195979892px solid transparent;
     transform: rotate(-70deg);
     content: '';
-  }
+}
