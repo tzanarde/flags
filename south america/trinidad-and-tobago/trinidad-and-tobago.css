@@ -1,0 +1,54 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1304px;
+    --size-diagonal: 1520.5px;
+    --size-white-stripe-width: 260.7188px;
+    --size-black-stripe-width: 173.812533333333333px;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-red-background: #db1332;
+    --color-white-stripe: #fff;
+    --color-black-stripe: #000;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red-background {
+    background-color: var(--color-red-background);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.white-stripe {
+    background-color: var(--color-white-stripe);
+    height: var(--size-white-stripe-width);
+    width: var(--size-diagonal);
+    rotate: 40.83871793deg;
+    position: absolute;
+    top: 268px;
+    left: -100px;
+}
+
+.black-stripe {
+    background-color: var(--color-black-stripe);
+    height: var(--size-black-stripe-width);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
