@@ -5,17 +5,17 @@ A project where I create the flags of countries around the world using only HTML
 ---
 
 ### Flags Done
-Asia: 🇧🇭 🇯🇵
+🌏 Asia: 🇧🇭 🇯🇵
 
-Africa: 
+🌍 Africa: 
 
-Europe: 🇨🇿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇫🇷 🇩🇪 🇮🇪 🇮🇹 🇳🇱 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇨🇭
+🌍 Europe: 🇨🇿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇫🇷 🇩🇪 🇮🇪 🇮🇹 🇳🇱 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇨🇭
 
-North America: 🇺🇸
+🌎 North America: 🇺🇸
 
-South America: 🇨🇱 🇨🇴 🇹🇹
+🌎 South America: 🇨🇱 🇨🇴 🇹🇹
 
-Oceania: 
+🌏 Oceania: 
 
 
 ### Flags Unfinished
