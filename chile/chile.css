@@ -1,0 +1,96 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1174px;
+    --prop-blue-rectangle-axis-x: 0.335031847133758;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-rectangle: #fff;
+    --color-blue-rectangle: #0036a7;
+    --color-red-rectangle: #d82719;
+    --color-white-star: #fff;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: white;
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-rectangle,
+.blue-rectangle,
+.red-rectangle {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.white-rectangle,
+.red-rectangle {
+    height: 50%;
+    padding: 0;
+}
+
+.white-rectangle {
+    background-color: var(--color-white-rectangle);
+}
+
+.blue-rectangle {
+    background-color: var(--color-blue-rectangle);
+    height: 100%;
+    width: calc(var(--prop-blue-rectangle-axis-x) * var(--size-axis-x));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-rectangle {
+    background-color: var(--color-red-rectangle);
+}
+
+.white-star {
+    background-color: transparent;
+    color: var(--color-white-star);
+    transform: rotate(35deg);
+    width: 0px;
+    height: 0px;
+    border-right: 107px solid transparent;
+    border-bottom: 74.9px solid var(--color-white-star);
+    border-left: 107px solid transparent;
+  }
+
+.white-star:before {
+    position: absolute;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+    top: -51px;
+    left: -63px;
+    border-bottom: 85.6px solid var(--color-white-star);
+    border-left: 32.1px solid transparent;
+    border-right: 32.1px solid transparent;
+}
+
+.white-star:after {
+    content: '';
+    color: var(--color-white-star);
+    transform: rotate(-70deg);
+    position: absolute;
+    top: 3px;
+    left: -111px;
+    width: 0px;
+    height: 0px;
+    border-right: 107px solid transparent;
+    border-bottom: 74.9px solid var(--color-white-star);
+    border-left: 107px solid transparent;
+}
