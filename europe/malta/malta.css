@@ -1,0 +1,51 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1173px;
+    --prop-red-rectangle-axis-x: 0.5;
+    --prop-image-axis-y: 0.270386266094421;
+    --prop-image-axis-x: 0.18;
+    --prop-image-margin-axis-y: 0.050847457627119;
+    --prop-image-margin-axis-x: 0.034285714285714;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-background: #fff;
+    --color-red-rectangle: #cf142b;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-background {
+    background-color: var(--color-white-background);
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    background-color: transparent;
+    height: calc(var(--prop-image-axis-y) * var(--size-axis-y));
+    width: calc(var(--prop-image-axis-x) * var(--size-axis-x));
+    position: absolute;
+    top: calc(var(--prop-image-margin-axis-y) * var(--size-axis-y));
+    left: calc(var(--prop-image-margin-axis-x) * var(--size-axis-x));
+}
+
+.red-rectangle {
+    background-color: var(--color-red-rectangle);
+    width: calc(var(--prop-red-rectangle-axis-x) * var(--size-axis-x));
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
