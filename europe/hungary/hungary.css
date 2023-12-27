@@ -1,0 +1,52 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1564px;
+    --prop-rectangles-axis-y: 0.33333333;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-background: #fff;
+    --color-red-rectangle: #ce2939;
+    --color-green-rectangle: #477050;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-background,
+.red-rectangle,
+.green-rectangle {
+    width: 100%;
+}
+
+.white-background {
+    background-color: var(--color-white-background);
+    height: 100%;
+}
+
+.red-rectangle,
+.green-rectangle {
+    position: absolute;
+    height: calc(var(--prop-rectangles-axis-y) * var(--size-axis-y));
+}
+
+.red-rectangle {
+    background-color: var(--color-red-rectangle);
+    top: 0;
+}
+
+.green-rectangle {
+    background-color: var(--color-green-rectangle);
+    bottom: 0;
+}
