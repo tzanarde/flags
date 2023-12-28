@@ -4,7 +4,7 @@ A project where I create the flags of countries around the world using only HTML
 
 ---
 
-### Flags Done
+### ✅ Flags Done
 🌏 Asia: 🇧🇭 🇯🇵
 
 🌍 Africa: 🇬🇦
@@ -18,5 +18,5 @@ A project where I create the flags of countries around the world using only HTML
 🌏 Oceania: 
 
 
-### Flags Unfinished
+### 🟣 Flags Unfinished
 🇧🇷 🇸🇰
