@@ -1,0 +1,125 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1174px;
+    --prop-rectangles-axis-y: 0.3333333;
+    --prop-shield-axis-x: 0.281818181818182;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-background: #fff;
+    --color-blue-rectangle: #034da4;
+    --color-red-rectangle: #ef1520;
+    --color-shield-background: #ef1520;
+    --color-shield-border: #fff;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-background {
+    background-color: var(--color-white-background);
+    height: 100%;
+    width: 100%;
+}
+
+.red-rectangle,
+.blue-rectangle {
+    position: absolute;
+    height: calc(var(--size-axis-y) * var(--prop-rectangles-axis-y));
+    width: 100%;
+}
+
+.red-rectangle {
+    background-color: var(--color-red-rectangle);
+    bottom: 0;
+}
+
+.blue-rectangle {
+    background-color: var(--color-blue-rectangle);
+    bottom: calc(var(--size-axis-y) * var(--prop-rectangles-axis-y));
+}
+
+.shield-border-top {
+    background-color: transparent;
+    position: absolute;
+    width: calc((var(--prop-shield-axis-x) * var(--size-axis-x)));
+    top: 187px;
+    left: 167px;
+    border-bottom: 220px solid var(--color-shield-border);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.shield-border-bottom-right {
+    background-color: transparent;
+    position: absolute;
+    top: 320px;
+    left: 202px;
+    rotate: 316deg;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 400px;
+    border-bottom: 260px solid var(--color-shield-border);
+    border-left: 211px solid transparent;
+    border-right: 165px solid transparent;
+}
+
+.shield-border-bottom-left {
+    background-color: transparent;
+    position: absolute;
+    top: 323px;
+    left: 100px;
+    rotate: 40deg;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 5%;
+    border-bottom: 260px solid var(--color-shield-border);
+    border-left: 165px solid transparent;
+    border-right: 211px solid transparent;
+}
+
+.shield-top {
+    background-color: transparent;
+    position: absolute;
+    width: calc((var(--prop-shield-axis-x) * var(--size-axis-x)) - 26px);
+    top: 200px;
+    left: 180px;
+    border-bottom: 205px solid var(--color-shield-background);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.shield-bottom-right {
+    background-color: transparent;
+    position: absolute;
+    top: 330px;
+    left: 217px;
+    rotate: 317deg;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 400px;
+    border-bottom: 241px solid var(--color-shield-background);
+    border-left: 196px solid transparent;
+    border-right: 146px solid transparent;
+}
+
+.shield-bottom-left {
+    background-color: transparent;
+    position: absolute;
+    top: 333px;
+    left: 120px;
+    rotate: 39deg;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 5%;
+    border-bottom: 241px solid var(--color-shield-background);
+    border-left: 146px solid transparent;
+    border-right: 196px solid transparent;
+}
