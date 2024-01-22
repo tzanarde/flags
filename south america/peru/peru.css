@@ -1,0 +1,41 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1174px;
+    --prop-red-rectangles-axis-y: 1;
+    --prop-red-rectangles-axis-x: 0.3333333;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-white-background: #fff;
+    --color-red-rectangles: #d91023;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white-background {
+    background-color: var(--color-white-background);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-rectangle-left,
+.red-rectangle-right {
+    background-color: var(--color-red-rectangles);
+    height: var(--prop-red-rectangles-axis-y);
+    width: calc(var(--size-axis-x) * var(--prop-red-rectangles-axis-x));
+}
