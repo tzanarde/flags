@@ -9,7 +9,7 @@ A project where I create the flags of countries around the world using only HTML
 
 - 🌍 Africa: 🇬🇦 🇲🇬
 
-- 🌍 Europe: 🇧🇬 🇨🇿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇫🇷 🇩🇪 🇭🇺 🇮🇪 🇮🇹 🇲🇹 🇲🇨 🇳🇱 🇵🇱 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇨🇭
+- 🌍 Europe: 🇧🇬 🇨🇿 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇫🇷 🇩🇪 🇭🇺 🇮🇪 🇮🇹 🇲🇹 🇲🇨 🇳🇱 🇵🇱 🇷🇴 🏴󠁧󠁢󠁳󠁣󠁴󠁿 🇨🇭
 
 - 🌎 North America: 🇳🇮 🇺🇸
 
