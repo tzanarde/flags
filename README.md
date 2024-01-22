@@ -13,7 +13,7 @@ A project where I create the flags of countries around the world using only HTML
 
 - 🌎 North America: 🇳🇮 🇺🇸
 
-- 🌎 South America: 🇨🇱 🇨🇴 🇹🇹
+- 🌎 South America: 🇨🇱 🇨🇴 🇵🇪 🇹🇹
 
 - 🌏 Oceania: 
 
