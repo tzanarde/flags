@@ -1,0 +1,56 @@
+:root {
+    --size-axis-y: 782px;
+    --size-axis-x: 1174px;
+    --prop-green-rectangle-axis-y: 0.5;
+    --prop-green-rectangle-axis-x: 0.666666666667;
+    --prop-white-semi-circle-axis-y: 0.333333333333;
+    --prop-white-semi-circle-axis-x: 0.2;
+    --color-background: #000;
+    --color-flag-area: #c62fab;
+    --color-red-background: #d30731;
+    --color-green-rectangle: #007f37;
+    --color-white-semi-circle: #fff;
+}
+
+* {
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+.flag-area {
+    background-color: var(--color-flag-area);
+    height: var(--size-axis-y);
+    width: var(--size-axis-x);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red-background {
+    background-color: var(--color-red-background);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-rectangle {
+    background-color: var(--color-green-rectangle);
+    height: calc(var(--prop-green-rectangle-axis-y) * var(--size-axis-y));
+    width: calc(var(--prop-green-rectangle-axis-x) * var(--size-axis-x));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-semi-circle {
+    background-color: transparent;
+    height: calc(var(--prop-white-semi-circle-axis-y) * var(--size-axis-y));
+    width: calc(var(--prop-white-semi-circle-axis-x) * var(--size-axis-x));
+    border-radius: 50%;
+    box-shadow: 45px 0px 0 0 var(--color-white-semi-circle);
+    rotate: 180deg;
+    margin-left: 180px;
+}
